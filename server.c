@@ -52,7 +52,7 @@ void main (){
     scanf("%d", &jugadores);
         
         if(jugadores>4){
-            printf("el numero de jugadores maximo es 4")
+            printf("el numero de jugadores maximo es 4");
         }  
 
         switch (jugadores){
@@ -127,7 +127,7 @@ void main (){
 
         case 4:
             tamTabla=12;
-            num = 36º;
+            num = 36;
             int tablero[tamTabla][tamTabla];
             int valores[30];
 
@@ -169,29 +169,29 @@ void main (){
 
     if(jugadores >= 2){
         if(mkfifo(FIFONAME,666)){ 
-            perror("mkfifo")
+            perror("mkfifo");
             return(1);
         }
         if(mkfifo(FIFONAME_JUG1,666)){ 
-            perror("mkfifo")
+            perror("mkfifo");
             return(1);
         }
         if(mkfifo(FIFONAME_JUG2,666)){ 
-            perror("mkfifo")
+            perror("mkfifo");
             return(1);
         }
 
 
         if(fd_t1 = open(FIFONAME_JUG1, O_RDWR)) < 0) { 
-            perror("Open t1")
+            perror("Open t1");
             exit(1);
         }
         if(fd_t2 = open(FIFONAME_JUG2, O_RDWR)) < 0) { 
-            perror("Open t2")
+            perror("Open t2");
             exit(1);
         }
         if(fd_g = open(FIFONAME, O_RDWR)) < 0) { 
-            perror("Open FDG")
+            perror("Open FDG");
             exit(1);
         }
         jug1 = fork();
@@ -209,11 +209,11 @@ void main (){
     }
     if(jugadores >= 3){
         if(mkfifo(FIFONAME_JUG3,666)){ 
-            perror("mkfifo")
+            perror("mkfifo");
             return(1);
         }
         if(fd_t3 = open(FIFONAME_JUG3, O_RDWR)) < 0) { 
-            perror("Open t3")
+            perror("Open t3");
             exit(1);
         }
         jug3 = fork();
@@ -226,11 +226,11 @@ void main (){
 
     if(jugadores == 4){
         if(mkfifo(FIFONAME_JUG4,666)){ 
-            perror("mkfifo")
+            perror("mkfifo");
             return(1);
         }
         if(fd_t3 = open(FIFONAME_JUG4, O_RDWR)) < 0) { 
-            perror("Open t4")
+            perror("Open t4");
             exit(1);
         }
         jug3 = fork();
@@ -345,7 +345,7 @@ void run2 (int jug1, int jug2,int jug3, int t1, int t2, int t3, int g, int *x, i
 }
 void run3 (int jug1, int jug2,int jug3,int jug3, int t1, int t2, int t3,int t4, int g, int *x, int *y, int *j){
     printf("3 jugadores\n");
-    int a x=0,y=0;
+    int a, x=0,y=0;
     char buffer[1024];
   
     while(1){
