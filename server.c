@@ -30,9 +30,9 @@ sem_t semaforos;
 
 void run1 (int jug1, int jug2, int t1, int t2, int g, int *x, int *y, int *j);
 
-void run2 (int jug1, int jug2,int jug3, int t1, int t2, int t3, int g, int *x, int *y, int *j);
+void run2 (int jug1, int jug2, int jug3, int t1, int t2, int t3, int g, int *x, int *y, int *j);
 
-void run3 (int jug1, int jug2,int jug3,int jug3, int t1, int t2, int t3,int t4, int g, int *x, int *y, int *j);
+void run3 (int jug1, int jug2, int jug3, int jug3, int t1, int t2, int t3, int t4, int g, int *x, int *y, int *j);
 
 void main (){
 
