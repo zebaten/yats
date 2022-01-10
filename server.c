@@ -292,13 +292,13 @@ void run1 (int jug1, int jug2, int t1, int t2, int g, int *x, int *y, int *j){
     t2 = open(FIFONAME_JUG2, O_RDWR);
     if((a = read(g,buffer, sizeof(buffer))) > 0){
         write(1, buffer, a);
-        x* = buffer[0]- "0";
+        x* = buffer[0] - "0";
         close(g);
     }
     g = open(FIFONAME, O_RDWR);
     if((a = read(g,buffer, sizeof(buffer))) > 0){
         write(1, buffer, a);
-        y* = buffer[0]- "0";
+        y* = buffer[0] - "0";
         close(g);
     }
     if(jug1 == 0){
@@ -322,13 +322,13 @@ void run2 (int jug1, int jug2,int jug3, int t1, int t2, int t3, int g, int *x, i
     while(1){
         if((a = read(g,buffer, sizeof(buffer))) > 0){
             write(1, buffer, a);
-            *x = buffer[0]- "0";
+            *x = buffer[0] - "0";
             close(g);
         }
         
         if((a = read(g,buffer, sizeof(buffer))) > 0){
             write(1, buffer, a);
-            *y = buffer[0]- "0";
+            *y = buffer[0] - "0";
             
         }
         if(jug1 == 0){
@@ -351,12 +351,12 @@ void run3 (int jug1, int jug2,int jug3,int jug3, int t1, int t2, int t3,int t4, 
     while(1){
         if((a = read(g,buffer, sizeof(buffer))) > 0){
             write(1, buffer, a);
-            *x = buffer[0]- "0";
+            *x = buffer[0] - "0";
         }
         
         if((a = read(g,buffer, sizeof(buffer))) > 0){
             write(1, buffer, a);
-            *y = buffer[0]- "0";
+            *y = buffer[0] - "0";
             
         }
         if(jug1 == 0){
