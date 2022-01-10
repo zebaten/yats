@@ -32,7 +32,7 @@ void run1 (int jug1, int jug2, int t1, int t2, int g, int *x, int *y, int *j);
 
 void run2 (int jug1, int jug2, int jug3, int t1, int t2, int t3, int g, int *x, int *y, int *j);
 
-void run3 (int jug1, int jug2, int jug3, int jug3, int t1, int t2, int t3, int t4, int g, int *x, int *y, int *j);
+void run3 (int jug1, int jug2, int jug3, int jug4, int t1, int t2, int t3, int t4, int g, int *x, int *y, int *j);
 
 void main (){
 
@@ -43,7 +43,7 @@ void main (){
     unlink(FIFONAME_JUG4);
 
     int jugadores;
-    int i,j;
+    int i;
     int tamTabla;
     int num;
     int x=0, y=0, j=0;
